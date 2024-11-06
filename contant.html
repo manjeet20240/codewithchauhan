@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>package</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 3rem 9%;
+
+}
+
+.hero{
+    
+    
+    width: 100%;
+    color: greenyellow;
+    position: relative;
+    background-color:#666
+}
+.hero a:hover{
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+
+}
+
+nav .logo img{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav ul{
+    flex:1;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    font-size: 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black
+}
+
+nav .ican{
+    display: flex;
+}
+
+nav .ican i{
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--main-color);
+    cursor:pointer;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem !important;
+    background: #666
+}
+
+box h3{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer-box a{
+    color: #e72463;
+    margin-bottom: 10px;
+    
+}
+
+.social a :hover{
+    color: #df582e;
+}
+
+.footer .logo{
+    color: #e72463;
+    margin-bottom: 1rem;
+}
+.social{
+  display:flex;
+  align-items: center; 
+  margin-top: 1rem; 
+}
+.social a{
+   font-size: 24px;
+   color:#e72463;
+   margin-right: 1rem;
+}
+
+.Copyright{
+    padding: 30px;
+    color: #e72463
+    
+
+}
+.copy{
+    width: 10%;
+    
+}
+
+</style>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Service">About valley</a></li>
+                <li><a href="#flowers">flowers</a></li>
+                <li><a href="#Packages">Packages</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact us">Contact Us</a></li>
+                <button style="cursor: pointer; margin-left:100px; width: 100px; font-size: large;">Login</button>
+            </ul>
+    
+            
+            
+        </nav>
+        
+    </div>
+
+    
+
+    <section class="footer container">
+        <div class="footer-box">
+            <img class="logo" src ="image/logo.png">
+            <div class="social">
+            <a href="#"><i class='bx bxl-twitch'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+        </div>
+        <div class="footer-box">
+            
+            <ul>
+                <li>
+            <a href="#">About</a>
+            <a href="#">Flowers</a>
+            <a href="#">Packages</a>
+            </li>
+        </ul>
+        </div>
+        <div class="footer-box">
+            
+            <a href="#">Blog</a>
+            <a href="#">Contact us</a>
+    
+        </div>
+        
+        <div class="copy">
+
+            <p class="Copyright">&#169; Manjeet chauhan</p>
+                </div>
+    </section>
+</body>
+</html>
