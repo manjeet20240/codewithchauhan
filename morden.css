@@ -124,10 +124,10 @@ nav .ican i{
 
 @keyframes image{
     0%{
-        background-image: url('image/slider.webp');
+        background-image: url('images/slider.webp');
     }
     100%{
-        background-image: url('image/slider0.webp');
+        background-image: url('images/slider0.webp');
     }
 }
 .home .detail span{
