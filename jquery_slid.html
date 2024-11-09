@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=652, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    #one{
+        padding: 3px; background: teal;
+        width: 234px;
+        color:white;
+        text-align: center;
+        border-bottom: 2px black solid;
+        cursor: pointer;
+    }
+    #m1{
+        background: teal;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 10px 10px 10px gray;
+        margin-top: -30px;
+    }
+    #m1{float:left;}
+    #m1 a{color:white}
+
+    #m1 ol li{margin-left: -50px; list-style: none; padding: 20px; text-align: center;
+    border-bottom: 2px black solid;}
+    #m1 li:hover{
+        background: #0c6963;border-top: 2px black solid;
+    }
+    #m1
+</style>
+<body>
+    <h1 style="display: block;padding: 20px; background:teal;color: white;">Welcome to my website</h1>
+<script>
+    $(document).ready(function()
+    {
+        $("#one").click(function()
+    
+            {
+
+                $("#m1").slideToggle(500)
+
+
+            })
+
+
+
+    })
+
+    function f1()
+    {
+        document.title ="Ready"
+        document.bgColor="black"
+    }
+</script>
+<div id="one">Menu</div>
+<div id="m1">
+        <ol>
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">Data</a></li>
+            <li><a href="">Contact us</a></li>
+        </ol>
+</div>
+
+</body>
+</html>
