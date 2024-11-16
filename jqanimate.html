@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery-3.7.1.min.js"></script>
+
+
+<style>
+    #heading1{
+        position: relative;
+        left: -400px;
+        color:green;
+        transition: 2s;
+    }
+</style>
+<body>
+        <h1 id="heading1">Jquery Animate</h1>
+    <script>
+        $(document).raedy(function()
+        {
+            $("#heading1").animate({left:"200px",top:"0px"},1000)
+            $("#heading1").animate({top:"50px"},500)
+
+            $("#heading1").animate({fontSize:"60px"},500,"swing",function(){
+
+
+
+                document.getElementById("heading1").style.textTransform="uppercase"
+            })
+
+
+
+            $("#heading1").animate({letterSpacing:"20px"},500,function()
+        
+        {
+            document.getElementById("heading1").style.color="red"
+        })
+
+        })
+
+    </script>
+</body>
+</html>
