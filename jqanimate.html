@@ -5,42 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="https://code.jquery-3.7.1.min.js"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <style>
-    #heading1{
-        position: relative;
-        left: -400px;
-        color:green;
-        transition: 2s;
-    }
+#logo
+{
+    width: 25%;
+    background: purple;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: arial black;
+    box-shadow: 10px 10px 10px gray;
+    padding: 20px;
+    position: absolute;
+    left:-500px;
+    top:10px;
+}
 </style>
 <body>
-        <h1 id="heading1">Jquery Animate</h1>
+    <div id="logo">Portfolio</div>
     <script>
-        $(document).raedy(function()
+        var logo = document.getElementById("logo")
+    $(document).ready(function()
+    {
+
+        $("#logo").animate({left:"37%"},500).animate({top:"200px"},500).delay(500)
+        $("#logo").animate({fontSize:"+79px",width:"+35%"},500,)
+        $("#logo").animate({borderRadius:"+79px"},500,mycolor)
+        $("#logo").animate({left:"+400px"},500).delay(200)
+        $("#logo").animate({left:"550px"},500).delay(300)
+        $("#logo").animate({left:"450px"},500)
+        $("#logo").animate({left:"-650px"},100).delay(200)
+        $("#logo").animate({left:"37%" ,opacity:"0"},0).delay(500)
+        $("#logo").animate({opacity:"1"},2000).delay(500,home)
+    })
+
+
+    function home()
+    {
+        location.href="https://manjeet20240.github.io/codewithchauhan/"
+    }
+
+    var r,g,b,c,t = 0
+    var i = 0
+
+    function mycolor()
+    {
+        document.body.style.background="black"
+
+        t = setInterval("blink()",500)
+    }
+
+    function blink()
+
         {
-            $("#heading1").animate({left:"200px",top:"0px"},1000)
-            $("#heading1").animate({top:"50px"},500)
+            r = Math.round(Math.random()*255)
+            g = Math.round(Math.random()*255)
+            b = Math.round(Math.random()*255)
+        c = `rgb(${r},{g},${b})`
+        logo.style.color= c
 
-            $("#heading1").animate({fontSize:"60px"},500,"swing",function(){
+            r = Math.round(Math.random()*255)
+            g = Math.round(Math.random()*255)
+            b = Math.round(Math.random()*255)
+        c = `rgb(${r},{g},${b})`
 
-
-
-                document.getElementById("heading1").style.textTransform="uppercase"
-            })
-
-
-
-            $("#heading1").animate({letterSpacing:"20px"},500,function()
-        
+        logo.style.background= c
+            i++
+            if(i>5)
         {
-            document.getElementById("heading1").style.color="red"
-        })
+            clearInterval(t)
+        }
+           
+        document.title = i
 
-        })
-
+        }
     </script>
 </body>
 </html>
